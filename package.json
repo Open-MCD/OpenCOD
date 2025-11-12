@@ -1,0 +1,19 @@
+{
+  "name": "open-cod-server",
+  "version": "0.1.0",
+  "description": "Minimal Express server scaffold for Open-COD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

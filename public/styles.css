@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background: initial;
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Verdana', 'Trebuchet MS', sans-serif;
+}
+
+.base-aspect-ratio {
+    position: absolute;
+    top: 0.5%;
+    left: 0.5%;
+    height: 99%; /* Extend to full window height */
+    width: auto; /* Adjust width proportionally */
+    aspect-ratio: 9 / 16; /* Vertical aspect ratio */
+    outline: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.disclaimer-div {
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    background: black;
+    outline: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.disclaimer-half {
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.5em;
+    font-size: 65%;
+    box-sizing: border-box;
+    font-family: inherit;
+    /* Remove flex to allow normal inline flow */
+}
+
+.highlight {
+    font-weight: bold;
+}
