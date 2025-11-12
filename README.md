@@ -1,30 +1,21 @@
-# Open-COD Express Server
-
-Minimal Express server scaffold.
+# Open-COD Server
 
 ## Setup
 
 1. Install dependencies:
 
 ```powershell
-cd "c:/Users/Andy/Documents/Code/Open-COD"
 npm install
 ```
 
 2. Run server:
 
 ```powershell
+# regular start
 npm start
-# or for development with auto-reload (nodemon):
+# or for dev with auto-reload (nodemon):
 npm run dev
 ```
 
-3. Run tests:
-
-```powershell
-npm test
-```
-
 Endpoints:
-- GET /         -> { status: 'ok', message: 'Open-COD server' }
-- GET /health   -> { status: 'ok', uptime: <seconds> }
+- GET /: cod (html only, not responsive right now)
