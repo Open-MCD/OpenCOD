@@ -12,14 +12,13 @@ body {
     position: absolute;
     top: 0.5%;
     left: 0.5%;
-    height: 99%; /* Extend to full window height */
-    width: auto; /* Adjust width proportionally */
-    aspect-ratio: 9 / 16; /* Vertical aspect ratio */
+    /* width and height set by JS */
+    aspect-ratio: 9 / 16;
     outline: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* Add relative positioning for absolute children if needed */
+    font-size: 1rem;
 }
 
 .left-pane-div {
@@ -71,6 +70,7 @@ body {
     display: flex;
     flex-direction: row;
     z-index: 3;
+    font-size: 1em;
 }
 
 .disclaimer-half {
@@ -81,10 +81,9 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0.5em;
-    font-size: 1.15vh;
+    font-size: 0.3em;
     box-sizing: border-box;
     font-family: inherit;
-    /* Remove flex to allow normal inline flow */
 }
 
 .highlight {

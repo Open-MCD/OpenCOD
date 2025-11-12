@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="base-aspect-ratio">
+    <div id="base-aspect-ratio" class="base-aspect-ratio">
         <div class="left-pane-div">
             <div class="left-top-div"><img src="/img/ad.png" alt="Ad" class="ad-img"></div>
             <div class="left-bottom-div"><img src="/img/ad2.png" alt="Ad 2" class="ad-img"></div>
@@ -17,5 +17,25 @@
             <div class="disclaimer-half right-half"><span class="highlight">Food Allergy?</span> Please be advised that any of our products may contain, or may have come in contact with food allergens including eggs, fish, milk, peanuts, sesame, shellfish, soy, tree nuts and wheat. For ingredient information please visit McDonalds.com</div>
         </div>
     </div>
+    <script>
+    function resizeAspectBox() {
+        const aspect = 9/16;
+        const box = document.getElementById('base-aspect-ratio');
+        const vw = window.innerWidth * 0.99;
+        const vh = window.innerHeight * 0.99;
+        let width = vw;
+        let height = vw / aspect;
+        if (height > vh) {
+            height = vh;
+            width = vh * aspect;
+        }
+        box.style.width = width + 'px';
+        box.style.height = height + 'px';
+        // Set font-size relative to height for perfect scaling
+        box.style.fontSize = (height * 0.04) + 'px';
+    }
+    window.addEventListener('resize', resizeAspectBox);
+    window.addEventListener('DOMContentLoaded', resizeAspectBox);
+    </script>
 </body>
 </html>
