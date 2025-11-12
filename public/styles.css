@@ -41,7 +41,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0.5em;
-    font-size: 65%;
+    font-size: 1.15vh;
     box-sizing: border-box;
     font-family: inherit;
     /* Remove flex to allow normal inline flow */
