@@ -21,13 +21,21 @@ body {
     font-size: 1rem;
 }
 
+/* Container for the top (left and main panes) */
+.top-content-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}
+
 .left-pane-div {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    height: 90%; /* Only take up space above the disclaimer-div */
+    height: 100%;
     width: 33.3333%;
-    /* outline: 2px solid orange; */
+    outline: none;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -59,6 +67,16 @@ body {
     box-sizing: border-box;
 }
 
+.main-pane-div {
+    height: 100%;
+    width: 66.6665%;
+    outline: 2px solid orange;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
 .disclaimer-div {
     width: 100%;
     height: 10%;
@@ -66,6 +84,7 @@ body {
     padding: 0;
     background: black;
     outline: none;
+    border: none;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
